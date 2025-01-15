@@ -1,0 +1,8 @@
+---
+menu:
+  after:
+    name: NEW
+    weight: 5
+title: NEW
+
+---

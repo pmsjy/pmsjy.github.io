@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on 品茗教育在线文档</title>
+    <title>Posts on 品茗教育在线文档</title>
     <link>//localhost:1313/posts/</link>
-    <description>Recent content in Blog on 品茗教育在线文档</description>
+    <description>Recent content in Posts on 品茗教育在线文档</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Wed, 15 Jan 2025 15:47:40 +0800</lastBuildDate>
     <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating a New Theme</title>
