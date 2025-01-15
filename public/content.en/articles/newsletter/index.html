@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The theme supports a subscription to multiple newsletter providers.
+Buttondown Substack Revue Buttondown#[Params.newsletter.provider] = &ldquo;buttondown&rdquo;
+Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
+Substack#[Params.newsletter.provider] = &ldquo;substack&rdquo;
+Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
+Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/content.en/articles/newsletter/">
+  <meta property="og:site_name" content="Hugo Book">
+  <meta property="og:title" content="5. Newsletter">
+  <meta property="og:description" content="The theme supports a subscription to multiple newsletter providers.
+Buttondown Substack Revue Buttondown#[Params.newsletter.provider] = “buttondown”
+Copy the action url from your buttondown admin dashboard and add it to [Params.newsletter.path] in config.toml
+Substack#[Params.newsletter.provider] = “substack”
+Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to [Params.newsletter.path] in config.toml
+Note that since substack doesn’t have a native API for subscription. The theme uses the api from substackapi.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="content.en">
+    <meta property="article:published_time" content="2021-12-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2021-12-18T00:00:00+00:00">
+<title>5. Newsletter | Hugo Book</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/content.en/articles/newsletter/">
+<link rel="stylesheet" href="/book.min.6c8b9d2a1fc95075ed7da46ca81060b39add8fff6741ac51259f768929281e2c.css" integrity="sha256-bIudKh/JUHXtfaRsqBBgs5rdj/9nQaxRJZ92iSkoHiw=" crossorigin="anonymous">
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.8a8a1e62bac5c4c5be3aaf3a03ba091dab8c1fa36f6bcd6e29b8a792d6765a88.js" integrity="sha256-iooeYrrFxMW&#43;Oq86A7oJHauMH6Nva81uKbinktZ2Wog=" crossorigin="anonymous"></script>
+
+  <script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk=" crossorigin="anonymous"></script>
+
+  
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>Hugo Book</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/alex-shpak/hugo-book"  target="_blank" rel="noopener">
+        Github
+      </a>
+  </li>
+  
+  <li>
+    <a href="https://themes.gohugo.io/themes/hugo-book/"  target="_blank" rel="noopener">
+        Hugo Themes
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>5. Newsletter</h3>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#buttondown">Buttondown</a></li>
+        <li><a href="#substack">Substack</a></li>
+        <li><a href="#revue">Revue</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><p>The theme supports a subscription to multiple newsletter providers.</p>
+<ul>
+<li><strong>Buttondown</strong></li>
+<li><strong>Substack</strong></li>
+<li><strong>Revue</strong></li>
+</ul>
+<h2 id="buttondown">
+  Buttondown
+  <a class="anchor" href="#buttondown">#</a>
+</h2>
+<p>[Params.newsletter.provider] = &ldquo;buttondown&rdquo;</p>
+<p>Copy the <code>action</code> url from your buttondown admin dashboard and add it to <strong>[Params.newsletter.path]</strong> in config.toml</p>
+<p>
+  <img src="https://blog.buttondown.email/img/9.png" alt="Buttondown share form URL" /></p>
+<h2 id="substack">
+  Substack
+  <a class="anchor" href="#substack">#</a>
+</h2>
+<p>[Params.newsletter.provider] = &ldquo;substack&rdquo;</p>
+<p>Setting up substack is the easiest. Just add your substack newsletter URL (applicable for custom domains also) to <strong>[Params.newsletter.path]</strong> in config.toml</p>
+<p>Note that since substack doesn&rsquo;t have a native API for subscription. The theme uses the api from substackapi.com which is in no way associated to Substack itself.</p>
+<h2 id="revue">
+  Revue
+  <a class="anchor" href="#revue">#</a>
+</h2>
+<p>Add your revue <code>username</code> URL to <code>Params.newsletter.path</code> in your config.toml. Once done, the newsletter widget will start showing up in website&rsquo;s sidebar, allowing your visitors to subscribe to your newsletter.</p>
+<h4 id="how-to-find-your-revue-url-to-use">
+  How to find your Revue URL to use
+  <a class="anchor" href="#how-to-find-your-revue-url-to-use">#</a>
+</h4>
+<p>Login to your Revue account and go to to <code>Account Settings</code>, then the <code>Integrations</code> tab. Scroll to the bottom, and click on <code>Learn more</code> in <strong>Signup forms</strong> section.</p>
+<p>
+  <img src="https://downloads.intercomcdn.com/i/o/304891471/587879182e5d9d19aff97d2f/Screenshot&#43;2021-02-26&#43;at&#43;9.10.32&#43;AM.png" alt="Revue signup forms" /></p>
+<p>In the next page, you can find the add_subscriber URL.</p>
+<p>
+  <img src="https://github.com/apvarun/digital-garden-hugo-theme/blob/main/images/revue-signup-form-url.png?raw=true" alt="Revue URL" /></p>
+<p>Copy it and use in <code>config.toml</code>.</p>
+<p>→ 
+  <a href="/articles/google-analytics">Add Google analytics</a></p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/main/exampleSite/content/content.en/articles/newsletter.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#buttondown">Buttondown</a></li>
+        <li><a href="#substack">Substack</a></li>
+        <li><a href="#revue">Revue</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+ 
+      </div>
+    </aside>
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

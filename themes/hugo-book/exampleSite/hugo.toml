@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ../.. --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
-baseURL = 'yekai-pms.github.io'
-title = '品茗教育在线文档'
+baseURL = 'https://example.com/'
+title = 'Hugo Book'
 theme = 'hugo-book'
 
 # Book configuration
@@ -20,20 +20,33 @@ enableGitInfo = true
 # There are different options to translate files
 # See https://gohugo.io/content-management/multilingual/#translation-by-filename
 # And https://gohugo.io/content-management/multilingual/#translation-by-content-directory
+[languages]
+[languages.en]
+  languageName = 'English'
+  contentDir = 'content.en'
+  weight = 1
 
+[languages.zh]
+  languageName = 'Chinese'
+  contentDir = 'content.zh'
+  weight = 2
 
-
+[languages.he]
+  languageName = 'Hebrew'
+  contentDir = 'content.he'
+  languageDirection = 'rtl'
+  weight = 3
 
 [menu]
 # [[menu.before]]
 [[menu.after]]
-  name = "XR-LAB"
-  url = "http://www.pmsjy.com/"
+  name = "Github"
+  url = "https://github.com/alex-shpak/hugo-book"
   weight = 10
 
 [[menu.after]]
-  name = "品茗教育"
-  url = "http://www.pmsjy.com/"
+  name = "Hugo Themes"
+  url = "https://themes.gohugo.io/themes/hugo-book/"
   weight = 20
 
 [params]
@@ -61,7 +74,7 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  # BookRepo = 'https://github.com/alex-shpak/hugo-book'
+  BookRepo = 'https://github.com/alex-shpak/hugo-book'
 
   # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
   # commit hash for 'doc' page type.
@@ -95,7 +108,7 @@ enableGitInfo = true
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
-  # BookPortableLinks = true
+  BookPortableLinks = true
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
